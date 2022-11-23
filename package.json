@@ -85,6 +85,7 @@
     "lint": "eslint ./src/**/*.tsx ./src/**/*.ts ./scripts/**/*.ts",
     "next:build": "next build",
     "next:dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "next:start::commont": "next start -H 0.0.0.0 -p 8080",
     "next:start": "next start -H 0.0.0.0 -p $PORT",
     "scaffold": "ts-node --project tsconfig.scripts.json scripts/scaffold-component.ts",
     "start": "cross-env-shell JSS_MODE=disconnected \"npm-run-all --serial bootstrap --parallel next:dev start:disconnected-proxy start:watch-components\"",
