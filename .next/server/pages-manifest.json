@@ -1,0 +1,10 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/api/editing/render": "pages/api/editing/render.js",
+  "/[[...path]]": "pages/[[...path]].js",
+  "/api/editing/data/[key]": "pages/api/editing/data/[key].js",
+  "/_document": "pages/_document.js",
+  "/en/404": "pages/en/404.html",
+  "/zh-CN/404": "pages/zh-CN/404.html"
+}
