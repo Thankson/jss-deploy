@@ -5,12 +5,16 @@ const plugins = require('./src/temp/next-config-plugins') || {};
 
 const publicUrl = getPublicUrl();
 
+const isProd = process.env.NODE_ENV === "production";
+const assetPrefix = isProd ? "https://jss-app2.azurewebsites.net/" : publicUrl;
+
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
   // Set assetPrefix to our public URL
-  assetPrefix: publicUrl,
+  // assetPrefix: publicUrl,
+  assetPrefix,
 
   // Allow specifying a distinct distDir when concurrently running app in a container
   distDir: process.env.NEXTJS_DIST_DIR || '.next',
