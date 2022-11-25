@@ -5,8 +5,11 @@ const plugins = require('./src/temp/next-config-plugins') || {};
 
 const publicUrl = getPublicUrl();
 
-const isProd = process.env.NODE_ENV === "production";
-const assetPrefix = isProd ? "https://jss-app2.azurewebsites.net/" : "";
+/// Bad, had code.
+// const isProd = process.env.NODE_ENV === "production";
+// const assetPrefix = isProd ? "https://jss-app2.azurewebsites.net/" : "";
+/// Good, you need to config @ you HOST env
+const assetPrefix = process.env.PUBLIC_URL || "";
 
 /**
  * @type {import('next').NextConfig}
